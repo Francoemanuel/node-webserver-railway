@@ -20,14 +20,14 @@ app.get('/',  (req, res) => {
   });
 });
 
-app.get('/views/generic.hbs',  (req, res) => {
+app.get('/generic',  (req, res) => {
   res.render( 'generic', {
     nombre: 'Fernando Herrera',
     titulo: 'Curso de Node'
   });
 });
 
-app.get('/views/elements.hbs',  (req, res) => {
+app.get('/elements',  (req, res) => {
   res.render( 'elements', {
     nombre: 'Fernando Herrera',
     titulo: 'Curso de Node'
