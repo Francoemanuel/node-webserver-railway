@@ -14,20 +14,20 @@ hbs.registerPartials( __dirname + '/views/partials');
 app.use( express.static('public') );
 
 app.get('/',  (req, res) => {
-  res.render( 'Home', {
+  res.render( 'home', {
     nombre: 'Fernando Herrera',
     titulo: 'Curso de Node'
   });
 });
 
-app.get('/views/partials/generic.hbs',  (req, res) => {
+app.get('/views/generic.hbs',  (req, res) => {
   res.render( 'generic', {
     nombre: 'Fernando Herrera',
     titulo: 'Curso de Node'
   });
 });
 
-app.get('/views/partials/elements.hbs',  (req, res) => {
+app.get('/views/elements.hbs',  (req, res) => {
   res.render( 'elements', {
     nombre: 'Fernando Herrera',
     titulo: 'Curso de Node'
